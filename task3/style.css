@@ -1,0 +1,36 @@
+* {
+    margin: 0%;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+}
+
+div {
+    height: 50vh;
+    width: 40vw;
+    display: block;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-position: center;
+    background-size: cover;
+    border: 1vb black;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 1vb black;
+}
+
+
+button {
+    height: 10vmin;
+    width: 40vw;
+    font-size: 4vmin;
+    display: block;
+    background: linear-gradient(180deg, #8db913cc, #2de009);
+    color: white;
+    border: none;
+}

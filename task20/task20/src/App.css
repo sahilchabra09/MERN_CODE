@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+#root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  background-color: rgb(171, 171, 171);
+  align-items: center;
+  z-index: 100000000;
+}
+
+#nav-ul {
+  display: flex;
+  flex-direction: row;
+  margin-left: 50px;
+  gap: 40px;
+}
+
+.nav-li {
+  list-style: none;
+
+}
+
+.nav-li a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+
+#logo {
+  width: 70px;
+  margin-left: 20px;
+}
+
+.maincontainer {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  /* top: 100px; */
+  padding: 20px 70px;
+  padding-top: 100px;
+}
+
+#leftdiv {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 100px;
+  overflow-y: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.shoeBox {
+  width: 20vw;
+  height: 19vh;
+  background-color: burlywood;
+  width: 20vw;
+  height: 55vh;
+  border-radius: 25px;
+
+}
+
+.shoe-img {
+  width: 100%;
+  height: 60%;
+  z-index: 10000;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.priceCart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+}
+
+.Addtocart {
+  padding: 5px;
+  background-color: burlywood;
+  border-radius: 25px;
+
+}
+
+.Addtocart:hover {
+  background-color: wheat;
+}
+
+
+#rightdiv {
+  width: 30%;
+  /* height: fit-content; */
+  background-color: grey;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.cart-img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.cart-details {
+  flex-grow: 1;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-controls button {
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  margin: 0 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.quantity-controls span {
+  font-size: 18px;
+  width: 30px;
+  text-align: center;
+}

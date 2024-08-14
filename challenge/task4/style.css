@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.row-outer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    overflow: hidden;
+    /* Ensure any overflow is hidden */
+}
+
+.animated-heading {
+    position: relative;
+    font-size: 2rem;
+}
+
+#words {
+    display: inline-block;
+    position: relative;
+}
+
+/* Animation to slide text in from above */
+@keyframes slideInFromTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation to slide text out to the bottom */
+@keyframes slideOutToBottom {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+}
+
+/* Apply animation classes */
+.slide-in {
+    animation: slideInFromTop 1s forwards;
+}
+
+.slide-out {
+    animation: slideOutToBottom 1s forwards;
+}

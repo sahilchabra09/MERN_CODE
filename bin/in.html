@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .checkout-container {
+            width: 50vw;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .checkout-content {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        .contact-details,
+        .payment-section {
+            margin-bottom: 20px;
+        }
+
+        .contact-details h3,
+        .payment-section h3 {
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="email"],
+        input[type="text"],
+        select {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f3f3f3;
+        }
+
+        input[disabled],
+        select[disabled] {
+            background-color: #e0e0e0;
+            cursor: not-allowed;
+        }
+
+        .payment-methods {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .payment-method {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .payment-method.selected {
+            border-color: #ff9900;
+            background-color: #fff7e6;
+        }
+
+        .expiry-cvc,
+        .country-zip {
+            display: flex;
+            gap: 10px;
+        }
+
+        .expiry,
+        .cvc,
+        .country,
+        .zip {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="checkout-container">
+        <div class="checkout-content">
+            <h2>Checkout</h2>
+            <div class="contact-details">
+                <h3>Contact Details</h3>
+                <label for="email">Email ID</label>
+                <input type="email" id="email" placeholder="John Doe" disabled>
+            </div>
+            <div class="payment-section">
+                <h3>Payment</h3>
+                <div class="payment-methods">
+                    <button class="payment-method selected">Card</button>
+                    <button class="payment-method">Crypto</button>
+                    <button class="payment-method">Bank</button>
+                    <button class="payment-method">...</button>
+                </div>
+                <form>
+                    <label for="card-number">Card Number</label>
+                    <input type="text" id="card-number" placeholder="John Doe" disabled>
+
+                    <div class="expiry-cvc">
+                        <div class="expiry">
+                            <label for="expiry">Expiry</label>
+                            <input type="text" id="expiry" placeholder="MM/YY" disabled>
+                        </div>
+                        <div class="cvc">
+                            <label for="cvc">CVC</label>
+                            <input type="text" id="cvc" placeholder="***" disabled>
+                        </div>
+                    </div>
+
+                    <div class="country-zip">
+                        <div class="country">
+                            <label for="country">Country</label>
+                            <select id="country" disabled>
+                                <option value="India">India</option>
+                            </select>
+                        </div>
+                        <div class="zip">
+                            <label for="zip">ZIP</label>
+                            <input type="text" id="zip" placeholder="XXXXX" disabled>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+.card {
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)), linear-gradient(to right, rgba(131, 58, 180, 1), rgba(253, 29, 29, 1), rgba(252, 176, 69, 1));
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    width: 18vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 10vw;
+}

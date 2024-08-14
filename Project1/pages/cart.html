@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+    <nav>
+        <h1 class="orange">Thala <span class="blue">7.</span></h1>
+        <ul class="nav-links">
+            <li class="nav-li"><a href="index.html">Home</a></li>
+            <li class="nav-li"><a href="#">About</a></li>
+            <li class="nav-li"><a href="#">Brands</a></li>
+            <li class="nav-li"><a href="#">More</a></li>
+            <li class="nav-li"><a href="#">Contact</a></li>
+        </ul>
+        <div id="nav-div">
+            <input type="text" name="search" id="search" placeholder="Search">
+            <input type="number" name="cart" id="cart" placeholder="0">
+            <img src="../img/men.jpg" alt="" id="profile">
+        </div>
+    </nav>
+    <h1 id="main-H">Shopping Cart</h1>
+
+    <section class="hero">
+        <div class="right-container">
+            <table id="Item-table">
+                <tr id="headings">
+                    <td>Product</td>
+                    <td>Quantity</td>
+                    <td>price</td>
+                </tr>
+                <tr>
+                    <td>NIKE AIR JORDAN </td>
+                    <td>+1</td>
+                    <td>&#x20B9;20000</td>
+                </tr>
+                <tr>
+                    <td>NIKE AIR JORDAN </td>
+                    <td>+1</td>
+                    <td>&#x20B9;20000</td>
+                </tr>
+                <tr>
+                    <td>NIKE AIR JORDAN </td>
+                    <td>+1</td>
+                    <td>&#x20B9;20000</td>
+                </tr>
+            </table>
+        </div>
+        <div class="left-container">
+            <div class="table-L">
+                <div class="coupon-c">
+                    <label for="coupon">Enter the Coupon code</label>
+                    <br>
+                    <input type="text" placeholder="Coupon code" id="coupon" value="">
+                    <button class="app">Apply coupon</button>
+                </div>
+
+                <table>
+                    <tr>
+                        <td class="L-td">Sub total</td>
+                        <td class="L-td A-R">&#x20B9;60000</td>
+                    </tr>
+                    <tr>
+                        <td class="L-td">Taxes(if applicable)</td>
+                        <td class="L-td A-R">&#x20B9;2000</td>
+                    </tr>
+                    <tr>
+                        <td class="L-td">Discount</td>
+                        <td class="L-td A-R">&#x20B9;0</td>
+                    </tr>
+                    <tr id="Total">
+                        <td class="L-td"> Total</td>
+                        <td class="L-td A-R">&#x20B9;62000</td>
+                    </tr>
+                </table>
+            </div>
+            <a href="payment.html" id="Pay-now">Pay now &#x20B9;62000 </a>
+            <div class="payment-container">
+                <div class="P-IMG">
+                    <img src="../img/visa-credit-card-payment.png" alt="">
+                    <img src="../img/google-pay.png" alt="">
+                    <!-- <img src="../img/paypal-blue.png" alt=""> -->
+                    <img src="../img/apple-pay-logo-19557.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="back">
+        <a href="../index.html">&#8249;- Continue Shopping</a>
+    </div>
+
+
+</body>
+
+</html>

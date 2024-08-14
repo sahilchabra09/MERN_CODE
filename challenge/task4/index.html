@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge-4</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            /* Light gray background */
+        }
+
+        .row-outer {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
+            overflow: hidden;
+            /* Ensure any overflow is hidden */
+        }
+
+        .animated-heading {
+            position: relative;
+            font-size: 2rem;
+        }
+
+        #words {
+            display: inline-block;
+            position: relative;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            color: white;
+            /* Text color */
+            transition: background-color 0.3s ease;
+            /* Smooth color transition */
+            transform: translateY(-50px);
+            /* Start above its position */
+        }
+
+        /* Animation to slide text in from above */
+        @keyframes slideInFromTop {
+            0% {
+                opacity: 0;
+                transform: translateY(-100px);
+                /* Start above */
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+                /* End at normal position */
+            }
+        }
+
+        /* Animation to slide text out to the bottom */
+        @keyframes slideOutToBottom {
+            0% {
+                opacity: 1;
+                transform: translateY(0);
+                /* Start at normal position */
+            }
+
+            100% {
+                opacity: 0;
+                transform: translateY(100px);
+                /* Move down */
+            }
+        }
+
+        /* Apply animation classes */
+        .slide-in {
+            animation: slideInFromTop 0.5s forwards;
+            /* Faster animation (0.5 seconds) */
+        }
+
+        .slide-out {
+            animation: slideOutToBottom 0.5s forwards;
+            /* Faster animation (0.5 seconds) */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row-outer">
+        <div class="container">
+            <div class="animated-heading">
+                <h1>
+                    MAKE <br>
+                    <span id="words">LIFESTYLE</span><br>
+                    AWESOME
+                </h1>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        (function () {
+            var words = ["LIFESTYLE", "WORK", "EVERYTHING"],
+                colors = ["green", "blue", "red"], // Colors for each word
+                i = 0;
+
+            // Initial Setup
+            const wordsElement = document.getElementById('words');
+            wordsElement.textContent = words[i];
+            wordsElement.classList.add('slide-in');
+            wordsElement.style.backgroundColor = colors[i];
+
+            setInterval(function () {
+                wordsElement.classList.remove('slide-in');
+                wordsElement.classList.add('slide-out');
+
+                wordsElement.addEventListener('animationend', function onSlideOut() {
+                    wordsElement.removeEventListener('animationend', onSlideOut);
+                    i = (i + 1) % words.length;
+                    wordsElement.textContent = words[i];
+                    wordsElement.style.backgroundColor = colors[i];
+
+                    wordsElement.classList.remove('slide-out');
+                    wordsElement.classList.add('slide-in');
+                }, { once: true });
+            }, 3000);
+        })();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+body {
+    background-color: orange;
+}
+
+.head {
+    color: darkblue;
+}
+
+#bglime {
+    background-color: lime;
+}
+
+.red {
+    color: red;
+}
+
+p {
+    color: white;
+}
+
+#para {
+    color: green;
+}
+
+.p {
+    color: black;
+    font-size: large;
+}
+
+ul>li>span {
+    background-color: yellow;
+}
+
+ul>li>a {
+    background-color: rgba(128, 0, 128, 0.475);
+}
+
+ol>li {
+    color: black;
+}
+
+ol>li>span {
+    color: blue;
+}
+
+ol>li>em {
+    color: red;
+}
+
+em {
+    font-style: normal;
+}

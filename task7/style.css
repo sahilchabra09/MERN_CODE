@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    padding: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    background-color: white;
+}
+
+#ham-btn {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: white;
+    display: none;
+}
+
+
+
+#ham-menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    height: 100vh;
+    width: 40vw;
+    z-index: 20;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+
+}
+
+#ham-ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+#ham-btn:focus+#ham-menu {
+    display: flex;
+
+}
+
+
+
+#nav-ul {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+
+h2 {
+
+    margin-left: 3vw;
+}
+
+.user-section {
+    background-color: #E6F7FF;
+    padding: 3px 10px;
+    border-radius: 10px;
+    margin-right: 3vw;
+}
+
+.user-section a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 16px;
+}
+
+
+
+section {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4vw;
+}
+
+
+
+.leftDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 4vw;
+    display: inline;
+
+
+}
+
+#btn {
+    padding: 17px;
+    margin-top: 5px;
+    color: white;
+    background: #2bbbea;
+    border: none;
+    border-radius: 25px;
+}
+
+p {
+    margin-top: 15px;
+    width: 30vw;
+}
+
+.blue {
+    color: blue;
+}
+
+@media (max-width:1024px) {
+    h2 {
+        margin: 0;
+    }
+
+    .user-section {
+        margin: 0;
+    }
+
+    section {
+        gap: 0;
+    }
+
+    img {
+        width: 50vw;
+    }
+
+}
+
+@media (max-width:768px) {
+    h1 {
+        font-size: 3vw;
+    }
+
+    .rightdiv {
+        width: 55vw;
+    }
+
+    img {
+        width: 55vw;
+    }
+}
+
+@media (max-width:640px) {
+
+    
+    section {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 9vw;
+    }
+
+    p {
+        width: 90vw;
+    }
+
+    img {
+        width: 100vw;
+    }
+
+    #nav-ul {
+        display: none;
+    }
+
+    #ham-btn {
+        display: inline;
+    }
+}

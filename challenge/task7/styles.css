@@ -1,0 +1,94 @@
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    /* Background color of the page */
+}
+
+.centered-container {
+    position: relative;
+    text-align: center;
+}
+
+.wave-effect {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    /* Ensures wave stays within bounds */
+    height: 120px;
+    /* Adjust as needed */
+    padding: 0 20px;
+    /* Adjust as needed */
+}
+
+.wave-effect h1 {
+    position: relative;
+    font-size: 72px;
+    /* Adjust size as needed */
+    color: #ffa500;
+    /* Orange color for the text */
+    line-height: 120px;
+    /* Center text vertically */
+    font-weight: bold;
+    z-index: 3;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fixed green background */
+.wave {
+    position: absolute;
+    bottom: 0;
+    /* Position at the bottom */
+    left: 0;
+    right: 0;
+    height: 50%;
+    /* Height for the fixed green background */
+    background-color: rgba(0, 128, 0, 0.8);
+    /* Green color */
+    z-index: 2;
+    overflow: hidden;
+}
+
+/* Wave effect styling */
+.wave::before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    /* Position the wave above the green background */
+    left: 0;
+    width: 200%;
+    /* Extend the width for smooth animation */
+    height: 60px;
+    /* Adjust the height for the wave */
+    background: rgba(0, 128, 0, 0.6);
+    /* Wave color */
+    opacity: 0.9;
+    /* Opacity for the wave */
+    border-radius: 35%;
+    /* Rounded wave shape */
+    animation: wave-animation 5s infinite linear;
+    /* Wave animation */
+}
+
+/* Keyframes for wave animation */
+@keyframes wave-animation {
+    0% {
+        transform: translateX(-50%) translateY(0) scale(1.5);
+    }
+
+    50% {
+        transform: translateX(-25%) translateY(-10px) scale(1.5);
+        /* Peak wave */
+    }
+
+    100% {
+        transform: translateX(0) translateY(0) scale(1.5);
+    }
+}

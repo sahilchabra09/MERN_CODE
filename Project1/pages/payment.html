@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <section class="hero">
+        <div class="Left-container">
+            <h3>Checkout</h3>
+            <h2>Contact details</h2>
+
+            <label for="email">Email-ID</label>
+            <input type="email" name="email" id="email">
+            <h2>Payment</h2>
+
+            <div class="payment-D">
+                <div class="option-P">
+                    <div class="method-p orange" style="border-color: orange;">
+                        <span class="material-symbols-outlined" style="display: block; font-size: 2rem;">
+                            credit_card
+                        </span>
+                        <span style="font-size: 1.2rem;">Card</span>
+                    </div>
+                    <div class="method-p">
+                        <span class="material-symbols-outlined" style="display: block; font-size: 2rem;">
+                            currency_bitcoin
+                        </span>
+                        <span style="font-size: 1.2rem;">Crypto</span>
+                    </div>
+                    <div class="method-p">
+                        <span class="material-symbols-outlined" style="display: block; font-size: 2rem;">
+                            account_balance
+                        </span>
+                        <span style="font-size: 1.2rem;">Bank</span>
+                    </div>
+                    <div class="method-p">
+                        <span class="material-symbols-outlined" style="display: block; font-size: 2rem;">
+                            qr_code_scanner
+                        </span>
+                        <span style="font-size: 1.2rem;">UPI</span>
+                    </div>
+
+                </div>
+
+                <form>
+                    <label for="card-number">Card Number</label>
+                    <input type="text" id="card-number" placeholder="John Doe" class="input-field">
+
+                    <div class="expiry-cvc">
+                        <div class="expiry">
+                            <label for="expiry">Expiry</label>
+                            <input type="text" id="expiry" placeholder="MM/YY" class="input-field">
+                        </div>
+                        <div class="cvc">
+                            <label for="cvc">CVC</label>
+                            <input type="text" id="cvc" placeholder="***" class="input-field">
+                        </div>
+                    </div>
+
+                    <div class="country-zip">
+                        <div class="country">
+                            <label for="country">Country</label>
+                            <select id="country">
+                                <option value="India">India</option>
+                                <option value="Pakistan">Pakistan</option>
+                                <option value="Bangladesh">Bangladesh</option>
+                                <option value="Nepal">Nepal</option>
+                                <option value="Mayanmar">Mayanmar</option>
+                                <option value="Sri-Lanka">Sri-Lanka</option>
+                            </select>
+                        </div>
+                        <div class="zip">
+                            <label for="zip">ZIP</label>
+                            <input type="text" id="zip" placeholder="XXXXX" class="input-field">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <div class="Right-container">
+            <h1 style="font-size: 40px;">Order Details</h1>
+            <div class="table-L">
+                <div class="coupon-c">
+                    <label for="coupon">Enter the Coupon code</label>
+                    <br>
+                    <input type="text" placeholder="Coupon code" id="coupon" value="">
+                    <button class="app">Apply coupon</button>
+                </div>
+
+                <table>
+                    <tr>
+                        <td class="L-td">Sub total</td>
+                        <td class="L-td A-R">&#x20B9;60000</td>
+                    </tr>
+                    <tr>
+                        <td class="L-td">Taxes(if applicable)</td>
+                        <td class="L-td A-R">&#x20B9;2000</td>
+                    </tr>
+                    <tr>
+                        <td class="L-td">Discount</td>
+                        <td class="L-td A-R">&#x20B9;0</td>
+                    </tr>
+                    <tr id="Total">
+                        <td class="L-td"> Total</td>
+                        <td class="L-td A-R">&#x20B9;62000</td>
+                    </tr>
+                </table>
+            </div>
+            <a href="#s" id="Pay-now">Pay now &#x20B9;62000 </a>
+            <div class="payment-container">
+                <div class="P-IMG">
+                    <img src="../img/visa-credit-card-payment.png" alt="">
+                    <img src="../img/google-pay.png" alt="">
+                    <!-- <img src="../img/paypal-blue.png" alt=""> -->
+                    <img src="../img/apple-pay-logo-19557.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>

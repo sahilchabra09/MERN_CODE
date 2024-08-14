@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+.orange {
+    color: orange;
+}
+
+.blue {
+    color: blue;
+}
+
+#profile {
+    width: 3vw;
+    border-radius: 50%;
+
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    z-index: 1000;
+    padding-right: 2vw;
+    padding-top: 2vh;
+    padding-left: 8vw;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 2vw;
+}
+
+.nav-li>a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-li>a:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+
+#nav-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5vw;
+}
+
+#search {
+    width: 50%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+    background-image: url('img/search.png');
+    background-position: 8px 4px;
+    background-repeat: no-repeat;
+    padding: 5px 20px 5px 40px;
+}
+
+#cart {
+    width: 20%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+    background-image: url('img/shopping-bag.png');
+    background-position: 8px 4px;
+    background-repeat: no-repeat;
+    padding: 5px 20px 5px 40px;
+}
+
+#hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    background-color: #f9f9f9;
+    height: 78vh;
+}
+
+#logo {
+    width: 10vw;
+    height: 5vh;
+}
+
+/* #shoe {
+     width: 50vw;
+    height: 60vh; 
+} */
+
+#left-div>p {
+    width: 20vw;
+    font-size: 1.5vw;
+}
+
+#left-div {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10vw;
+    gap: 2vh;
+
+    width: 50vw;
+
+}
+
+.left-h1 {
+    font-size: 3vw;
+}
+
+#right-div {
+    width: 50vw;
+}
+
+
+.button {
+    display: block;
+    padding: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #201f1f;
+    border: none;
+    border-radius: 15px;
+    width: 15vw;
+}
+
+.button:hover {
+    background-color: grey;
+}
+
+footer {
+    background-color: orange;
+    height: 10vh;
+    position: relative;
+    bottom: -30px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+}
+
+#hand {
+    float: left;
+}
+
+#team {
+    float: left;
+}
+
+#quality {
+    float: left;
+}
+
+#rating {
+    float: left;
+}
+
+.customers {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.quality {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.review {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
