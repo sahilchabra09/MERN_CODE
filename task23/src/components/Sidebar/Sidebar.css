@@ -1,0 +1,13 @@
+.sidebar {
+    width: 300px;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.sidebar-right {
+    float: right;
+}
+
+.sidebar-left {
+    float: left;
+}

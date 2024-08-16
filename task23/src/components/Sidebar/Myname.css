@@ -1,0 +1,13 @@
+.my-name {
+    margin-bottom: 30px;
+}
+
+.my-name h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.my-name p {
+    color: #555;
+    line-height: 1.6;
+}

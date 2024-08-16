@@ -1,0 +1,26 @@
+.popular-posts {
+    margin-bottom: 30px;
+}
+
+.popular-posts h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.popular-posts ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.popular-posts li {
+    margin-bottom: 10px;
+}
+
+.popular-posts li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.popular-posts li a:hover {
+    text-decoration: underline;
+}
