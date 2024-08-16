@@ -1,0 +1,15 @@
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.photo-item {
+  text-align: center;
+  border: 2px solid grey;
+  padding: 10px;
+}
+
+h1 {
+  padding: 15px;
+}
