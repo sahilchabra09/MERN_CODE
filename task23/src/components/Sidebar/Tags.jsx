@@ -3,7 +3,7 @@ import './Tags.css';
 
 function Tags({ tags }) {
     return (
-        <div className="tags">
+        <div className="tags tag-div" >
             <h3>Tags</h3>
             <div className="tags-list">
                 {tags.map((tag, index) => (

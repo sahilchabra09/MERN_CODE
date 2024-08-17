@@ -5,7 +5,7 @@ function Footer() {
     let navigate = useNavigate();
 
     function handleClick() {
-        navigate('/destination-path');
+        navigate('/SignUp');
     }
 
     return (

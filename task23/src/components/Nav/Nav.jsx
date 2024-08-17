@@ -15,10 +15,16 @@ function Nav() {
     return (
         <>
             <nav>
-                <img src={Logo} alt="" className="logo" />
+                <div id="img">
+                    <NavLink
+                        to="/imglink"
+                    >
+                        <img src={Logo} alt="" className="logo" />
+                    </NavLink>
+                </div>
                 <ul>
                     <li><NavLink
-                        to="/"
+                        to=""
                         className={({ isActive }) => (isActive ? "active-link" : "inactive-link")}
                     >
                         Home

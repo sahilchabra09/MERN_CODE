@@ -1,5 +1,10 @@
 .my-name {
     margin-bottom: 30px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    background: #dbdbdb;
+    padding: 39px;
+    border-radius: 10px;
 }
 
 .my-name h3 {

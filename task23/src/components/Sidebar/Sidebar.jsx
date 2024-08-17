@@ -4,13 +4,15 @@ import PopularPosts from './PopularPosts';
 import Tags from './Tags';
 import './Sidebar.css';
 
-function Sidebar({ position = 'right', popularPosts, tags }) {
+function Sidebar({ popularPosts, tags }) {
     return (
-        <div className={`sidebar sidebar-${position}`}>
+
+        <div className={`sidebar`}>
             <MyName />
             <PopularPosts posts={popularPosts} />
             <Tags tags={tags} />
         </div>
+
     );
 }
 

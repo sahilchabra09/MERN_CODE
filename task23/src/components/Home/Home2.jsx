@@ -3,7 +3,7 @@ import Blog from '../Blog/Blog.jsx';
 import Sidebar from '../Sidebar/Sidebar.jsx';
 import './Home.css';
 
-function Home() {
+function Home2() {
     const popularPosts = [
         { id: 1, title: 'Lorem' },
         { id: 2, title: 'Ipsum' },
@@ -30,22 +30,22 @@ function Home() {
     return (
         <>
             <div className="hero">
+                <Sidebar
+                    position="right"
+                    popularPosts={popularPosts}
+                    tags={tags}
+                />
                 <Blog
-                    image="https://images.pexels.com/photos/9999921/pexels-photo-9999921.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    image="https://images.pexels.com/photos/27562923/pexels-photo-27562923/free-photo-of-horse.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
                     title="TITLE HEADING"
                     description="Title description"
                     date="April 7, 2014"
                     onReadMoreClick={handleReadMoreClick}
                     onCommentsClick={handleCommentsClick}
                 />
-                <Sidebar
-                    position="right"
-                    popularPosts={popularPosts}
-                    tags={tags}
-                />
             </div>
         </>
     );
 }
 
-export default Home;
+export default Home2;

@@ -10,7 +10,7 @@
 }
 
 .tag {
-    background-color: #007bff;
+    background-color: #28a745;
     color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
@@ -19,5 +19,14 @@
 }
 
 .tag:hover {
-    background-color: #0056b3;
+    background-color: #218838;
+}
+
+.tag-div {
+    margin-bottom: 30px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    background: #dbdbdb;
+    padding: 39px;
+    border-radius: 10px;
 }

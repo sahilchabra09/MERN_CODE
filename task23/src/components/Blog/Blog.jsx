@@ -1,9 +1,11 @@
 import React from 'react';
 import './Blog.css';
 
-function Blog({ title, description, date, onReadMoreClick, onCommentsClick }) {
+function Blog({ title, description, date, onReadMoreClick, onCommentsClick, image }) {
     return (
-        <div className="title-heading">
+
+        <div className="title-heading">-
+            <img src={image} alt="image hai bhai" />
             <h1>{title}</h1>
             <div className="meta-info">
                 <p className="description">{description}</p>

@@ -1,9 +1,19 @@
 .title-heading {
-    background-color: #fff;
-    padding: 20px;
+    background: #dbdbdb;
+    padding: 40px;
     margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 60vw;
+    margin-left: 40px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+    
+    border-radius: 10px;
+}
+
+img {
+    width: 100%;
+
 }
 
 .title-heading h1 {
@@ -42,7 +52,7 @@
 
 .actions .read-more,
 .actions .comments {
-    background-color: #007bff;
+    background-color: #28a745;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -52,5 +62,5 @@
 
 .actions .read-more:hover,
 .actions .comments:hover {
-    background-color: #0056b3;
+    background-color: #218838;
 }
