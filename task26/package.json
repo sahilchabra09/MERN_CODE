@@ -1,0 +1,15 @@
+{
+  "name": "task26",
+  "version": "1.0.0",
+  "description": "this is task number 26 for upskill mafia mern course ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "serve": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.1.9"
+  }
+}

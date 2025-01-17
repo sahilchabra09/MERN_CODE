@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title> Contact</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header>
+    <h1>My Stylish Website</h1>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-content">
+      <h2>Contact Us</h2>
+      <p>
+        Have any questions or comments? Feel free to reach out!
+      </p>
+
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Jane Doe" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Stylish Website</p>
+  </footer>
+</body>
+</html>
