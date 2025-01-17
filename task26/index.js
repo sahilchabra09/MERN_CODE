@@ -39,3 +39,6 @@ const server = http.createServer((req, res) => {
 server.listen(PORT, HOSTNAME, () => {
   console.log(`Server is listening at http://${HOSTNAME}:${PORT}`);
 });
+
+//How this server works 
+//  this server basially listens to port 2000 and hostname localhost how this works is basically http package allows us to create a http server and then there is if else for routing basically createserver takes 2 arguments and req and res req is the url user is asking for .. so  by using if else and by using req.url we achieve routing ad res.end sends us response back  and to load css file we served css differntly 
